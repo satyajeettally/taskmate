@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>index -Taskmate</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+       <div class = "row mt-5">
+            <div class = "col-lg-4">
+                <img src ="{% static 'images/sticky.jpg' %}" alt ="note" class="rounded-sm shadow-sm p-3 mb-5 bg-white rounded" width = "360" height ="250">
+            </div>
+            <div class = "col-lg-4">
+                <img src ="{% static 'images/sticky2.jpg' %}" alt ="note" class="rounded-sm shadow-sm p-3 mb-5 bg-white rounded" width = "360" height ="250">
+            </div>
+            <div class = "col-lg-4">
+                <img src ="{% static 'images/sticky.jpg' %}" alt ="note" class="rounded-sm shadow-sm p-3 mb-5 bg-white rounded" width = "360" height ="250">
+            </div>
+       </div>
+       <div class = "row mt-4">
+            <div class="col-md-6 offset-md-3">
+                <center><p class ="h2 text-primary">welfare infotech private limited</p></center>
+                <center><p class ="h3">Sharing Technology</p></center>
+                <center><p class ="h4">Silver Spring,Phase I, indore (MP)</p></center>
+                <center><a href ="{% url 'todolist' %}" ><button type="button" class="btn btn-primary btn-lg mt-3 shadow-sm">Let's Get Started</button></center>>
+            </div>
+       </div>
+      </div>
+{% endblock content %}
